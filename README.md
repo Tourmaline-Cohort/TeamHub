@@ -11,6 +11,10 @@ Follow the Instructions below
    ```
 
 1. CD into **TeamHub** folder
+1. Create a new branch using the command
+    ```bash
+    git checkout -b "write the name of the branch here"
+    ```
 1. Now create a new folder within TeamHub's folder. The name of the folder should same as the project you have been assigned to work on
 1. Within your project folder, create a Markdown file name README.md.
 1. Write the name of the project you have been assigned to work on.
