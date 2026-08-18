@@ -41,3 +41,6 @@ Follow the Instructions below
 | Lab 07 | Note App                   | Kalejaye           |
 
 **NOTE:** Remember that if the name of the folder is more than one word, hyphenate it
+
+# Calculator
+
