@@ -81,3 +81,11 @@ body .section2 .b2 {
 .p6 {
   border-radius: 10px;
 }
+
+.home{
+  padding: 0.5rem;
+  background-color: rgb(21, 206, 166);
+  border-radius: 10px;
+  color: rgb(19, 88, 148);
+  text-decoration: none;
+}
