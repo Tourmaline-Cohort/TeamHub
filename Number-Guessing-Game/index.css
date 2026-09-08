@@ -79,7 +79,7 @@ h3{
 }
 
 .hero__container--luck{
-  background-color: rgb(248, 252, 249,);
+  background-color: rgb(248, 252, 249);
   margin-inline: 195px;
   border-radius: 10px;
   margin-top: 40px;
@@ -96,7 +96,7 @@ h3{
 }
 
 .hero__container--attempts{
-  background-color: rgb(242, 246, 254,);
+  background-color: rgb(242, 246, 254);
   padding: 20px;
   width: 300px;
   border-radius: 10px;
