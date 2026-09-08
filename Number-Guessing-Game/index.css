@@ -186,3 +186,8 @@ h3{
   font-size:medium;
   border: 1px solid rgba(5, 3, 3, 0.503);
 }
+
+.label-text{
+  font-weight: bold;
+  color: rgb(23, 16, 16);
+}
