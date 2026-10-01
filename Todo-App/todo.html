@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="/index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+    <script src="https://kit.fontawesome.com/0ed54d4689.js" crossorigin="anonymous"></script>
+
+    <title>Todo-app</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <section class="container">
+        <div class="todo__app--left">
+
+            <div class="brand">
+                <div class="todo__brand">
+                    <i class="fa-solid fa-square-check" style="color: #0f53f4;"></i>
+                    <h5>Todo App</h5>
+                </div>
+                <small class="small__text">Stay organized. Get things done</small>
+            </div>
+
+            <div class="all__task">
+                <div class="task" id="bg__task">
+                    <div class="task-svg">    
+                        <div><i class="fa-solid fa-list-ul" style="color: #0f53f4;"></i></div>
+                        <div>All Tasks</div>
+                    </div>
+                    <div>8</div>
+                </div>
+
+                <div class="task">
+                    <div class="task-svg">    
+                        <div><i class="fa-regular fa-sun" style="color: #000000;"></i></div>
+                        <div>Today</div>
+                    </div>
+                    <div>3</div>
+                </div>
+
+                <div class="task">
+                    <div class="task-svg">    
+                        <div><i class="fa-regular fa-circle-check outline" style="color: #369d50;"></i></div>
+                        <div>Completed</div>
+                    </div>
+                    <div>4</div>
+                </div>
+
+                <di class="task">
+                    <div class="task-svg">    
+                        <div><i class="fa-regular fa-star" style="color: #e54035;"></i></div>
+                        <div>Important</div>
+                    </div>
+                    <div>1</div>
+                </div>
+
+                <div class="task">
+                    <div class="task-svg">    
+                        <div><i class="fa-regular fa-trash-can" style="color: #000000;"></i></div>
+                        <div>Trash</div>
+                    </div>
+                    <div>0</div>
+                </div>
+
+              
+                <hr class="line">
+
+
+               
+                <div class="all__categories">
+                    <div class="categories">
+                        <div>Categories</div>
+                        <i class="fa-solid fa-plus" style="color: #000000;"></i>
+                    </div>
+
+                    <div>
+                        <div class="task">
+                            <div class="task-svg">
+                                <div><i class="fa-solid fa-circle" style="color: #3395ff;"></i></div>
+                                <div>Work</div>
+                            </div>
+                            <div>3</div>
+                        </div>
+
+
+                        <div class="task">
+                            <div class="task-svg">
+                                <div><i class="fa-solid fa-circle" style="color: #3da95a;"></i></div>
+                                <div>Personal</div>
+                            </div>
+                            <div>3</div>
+                        </div>
+
+                        <div class="task">
+                            <div class="task-svg">
+                                <div><i class="fa-solid fa-circle" style="color: #9d67e6;"></i></div>
+                                <div>Study</div>
+                            </div>
+                            <div>1</div>
+                        </div>
+
+                        <div class="task">
+                            <div class="task-svg">
+                                <div><i class="fa-solid fa-circle" style="color: #f98f14;"></i></div>
+                                <div>Shopping</div>
+                            </div>
+                            <div>1</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+             
+
+        </div>
+
+        <div class="todo__app--right">
+
+            <div class="task__content">
+                <div>
+                    <h5>All Tasks</h5>
+                </div>
+                <div class="task__btn">
+                    <a class="filter btn" href="#"><i class="fa-solid fa-arrow-down-wide-short" style="color: rgb(0, 0, 0);"></i>Filter</a>
+                    <a class="sort btn" href="#"> Sort by: Date<i class="fa-solid fa-chevron-down" style="color: rgb(0, 0, 0);"></i></a>
+                    <a class="add btn" href="#"><i class="fa-solid fa-plus" style="color: #fff;"></i> Add  Task</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="tododone">
+                <div class="needs">
+                    <div>
+                        <i class="fa-solid fa-o" style="color: #dadbe2;"></i>
+                    </div>
+                    <div>
+                        <p>What needs to be done?</p>
+                    </div>
+                </div>
+                <div class="add__svg">
+                    <div><i class="fa-solid fa-calendar-minus" style="color: rgb(0, 0, 0);"></i></div>
+                    <div><i class="fa-regular fa-flag" style="color: rgb(0, 0, 0);"></i></div>
+                    <a class="bttn btn" href="#">Add</a>
+                </div>
+            </div>
+
+
+            <div class="task__container">
+
+                <div class="task__project top-radius">
+
+                    <div class="tproject">
+                        <div>
+                            <i class="fa-solid fa-o" style="color: #dadbe2;"></i>
+                        </div>
+                        <div class="project">
+                            <p>Complete Javascript project</p>
+                            <div class="small-circle">
+                                <div>
+                                    <i class="fa-solid fa-circle" style="color: #3395ff;"></i>
+                                </div>
+                                <div>
+                                    <small>Work</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calender">
+                        <div class="day">
+                            <div>
+                                <i class="fa-solid fa-calendar-minus" style="color: rgb(0, 0, 0);"></i>
+                            </div>
+                            <div>
+                                <small class="red">Today</small>
+                            </div>
+                        </div>
+                        <div><i class="fa-regular fa-star" style="color: rgb(0, 0, 0);"></i></div>
+                        <div><i class="fa-solid fa-ellipsis-vertical" style="color: rgb(0, 0, 0);"></i></div>
+                    </div>
+                </div>
+
+                <div class="task__project">
+
+                    <div class="tproject">
+                        <div>
+                            <i class="fa-solid fa-o" style="color: #dadbe2;"></i>
+                        </div>
+                        <div class="project">
+                            <p>Buy groceries</p>
+                            <div class="small-circle">
+                                <div>
+                                    <i class="fa-solid fa-circle" style="color: #FD8C14;"></i>
+                                </div>
+                                <div>
+                                    <small>Shopping</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calender">
+                        <div class="day">
+                            <div>
+                                <i class="fa-solid fa-calendar-minus" style="color: rgb(0, 0, 0);"></i>
+                            </div>
+                            <div>
+                                <small class="red">Today</small>
+                            </div>
+                        </div>
+                        <div><i class="fa-regular fa-star" style="color: rgb(0, 0, 0);"></i></div>
+                        <div><i class="fa-solid fa-ellipsis-vertical" style="color: rgb(0, 0, 0);"></i></div>
+                    </div>
+                </div>
+
+                <div class="task__project">
+
+                    <div class="tproject">
+                        <div>
+                            <i class="fa-solid fa-o" style="color: #dadbe2;"></i>
+                        </div>
+                        <div class="project">
+                            <p>Study for React fundamentals</p>
+                            <div class="small-circle">
+                                <div>
+                                    <i class="fa-solid fa-circle" style="color: #9E5EEA;"></i>
+                                </div>
+                                <div>
+                                    <small>Study</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calender">
+                        <div class="day">
+                            <div>
+                                <i class="fa-solid fa-calendar-minus" style="color: rgb(0, 0, 0);"></i>
+                            </div>
+                            <div>
+                                <small>Tomorrow</small>
+                            </div>
+                        </div>
+                        <div><i class="fa-regular fa-star" style="color: rgb(0, 0, 0);"></i></div>
+                        <div><i class="fa-solid fa-ellipsis-vertical" style="color: rgb(0, 0, 0);"></i></div>
+                    </div>
+                </div>
+
+                <div class="task__project">
+
+                    <div class="tproject">
+                        <div>
+                            <i class="fa-solid fa-circle-check" style="color: #40a55e;"></i>
+                        </div>
+                        <div class="project">
+                            <p class="overline">Morning workout</p>
+                            <div class="small-circle">
+                                <div>
+                                    <i class="fa-solid fa-circle" style="color: #40a55e;"></i>
+                                </div>
+                                <div>
+                                    <small>Personal</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calender">
+                        <div class="day">
+                            <div>
+                                <i class="fa-solid fa-calendar-minus" style="color: rgb(0, 0, 0);"></i>
+                            </div>
+                            <div>
+                                <small>Today</small>
+                            </div>
+                        </div>
+                        <div><i class="fa-solid fa-star" style="color: #fcc438;"></i></div>
+                        <div><i class="fa-solid fa-ellipsis-vertical" style="color: rgb(0, 0, 0);"></i></div>
+                    </div>
+                </div>
+
+                <div class="task__project">
+
+                    <div class="tproject">
+                        <div>
+                            <i class="fa-solid fa-o" style="color: #dadbe2;"></i>
+                        </div>
+                        <div class="project">
+                            <p>Read 20 pages of book</p>
+                            <div class="small-circle">
+                                <div>
+                                    <i class="fa-solid fa-circle" style="color: #40a55e;"></i>
+                                </div>
+                                <div>
+                                    <small>Personal</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calender">
+                        <div class="day">
+                            <div>
+                                <i class="fa-solid fa-calendar-minus" style="color: rgb(0, 0, 0);"></i>
+                            </div>
+                            <div>
+                                <small>May 16</small>
+                            </div>
+                        </div>
+                        <div><i class="fa-regular fa-star" style="color: rgb(0, 0, 0);"></i></div>
+                        <div><i class="fa-solid fa-ellipsis-vertical" style="color: rgb(0, 0, 0);"></i></div>
+                    </div>
+                </div>
+
+                <div class="task__project">
+
+                    <div class="tproject">
+                        <div>
+                            <i class="fa-solid fa-circle-check" style="color: #40a55e;"></i>
+                        </div>
+                        <div class="project">
+                            <p class="overline">Pay electricity bill</p>
+                            <div class="small-circle">
+                                <div>
+                                    <i class="fa-solid fa-circle" style="color: #3395ff;"></i>
+                                </div>
+                                <div>
+                                    <small>Work</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calender">
+                        <div class="day">
+                            <div>
+                                <i class="fa-solid fa-calendar-minus" style="color: rgb(0, 0, 0);"></i>
+                            </div>
+                            <div>
+                                <small>May 15</small>
+                            </div>
+                        </div>
+                        <div><i class="fa-solid fa-star" style="color: #fcc438;"></i></div>
+                        <div><i class="fa-solid fa-ellipsis-vertical" style="color: rgb(0, 0, 0);"></i></div>
+                    </div>
+                </div>
+
+                <div class="task__project">
+
+                    <div class="tproject">
+                        <div>
+                            <i class="fa-solid fa-o" style="color: #dadbe2;"></i>
+                        </div>
+                        <div class="project">
+                            <p>Prepare presentation</p>
+                            <div class="small-circle">
+                                <div>
+                                    <i class="fa-solid fa-circle" style="color: #3395ff;"></i>
+                                </div>
+                                <div>
+                                    <small>Work</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calender">
+                        <div class="day">
+                            <div>
+                                <i class="fa-solid fa-calendar-minus" style="color: rgb(0, 0, 0);"></i>
+                            </div>
+                            <div>
+                                <small>May 17</small>
+                            </div>
+                        </div>
+                        <div><i class="fa-regular fa-star" style="color: rgb(0, 0, 0);"></i></div>
+                        <div><i class="fa-solid fa-ellipsis-vertical" style="color: rgb(0, 0, 0);"></i></div>
+                    </div>
+                </div>
+
+                <div class="task__project bottom-radius">
+
+                    <div class="tproject">
+                        <div>
+                            <i class="fa-solid fa-circle-check" style="color: #40a55e;"></i>
+                        </div>
+                        <div class="project">
+                            <p class="overline">Call mum</p>
+                            <div class="small-circle">
+                                <div>
+                                    <i class="fa-solid fa-circle" style="color: #40a55e;"></i>
+                                </div>
+                                <div>
+                                    <small>Personal</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calender">
+                        <div class="day">
+                            <div>
+                                <i class="fa-solid fa-calendar-minus" style="color: rgb(0, 0, 0);"></i>
+                            </div>
+                            <div>
+                                <small>May 14</small>
+                            </div>
+                        </div>
+                        <div><i class="fa-regular fa-star" style="color: rgb(0, 0, 0);"></i></div>
+                        <div><i class="fa-solid fa-ellipsis-vertical" style="color: rgb(0, 0, 0);"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="total__task">
+                <div><span>8</span> task total</div>
+                <div><i class="fa-solid fa-circle small__fill" style="color: rgb(0, 0, 0);"></i></div>
+                <div class="green">4 completed</div>
+                <div><i class="fa-solid fa-circle small__fill" style="color: rgb(0, 0, 0);"></i></div>
+                <div class="blue">4 pending</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
