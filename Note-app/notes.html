@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b6a94454d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./notes.css" />
+    <title>Notes app</title>
+  </head>
+  <body>
+    <header>
+      <div class="leftnav">
+        <h2><i class="fa-solid fa-bars"></i></h2>
+        <h2>My Notes</h2>
+      </div>
+      <div class="rightnav">
+        <h2><i class="fa-solid fa-ellipsis-vertical"></i></h2>
+      </div>
+    </header>
+
+    <main>
+      <!-- Search bar and filters section -->
+
+      <nav>
+        <div class="searchbar">
+          <input type="text" placeholder="Search notes..." />
+        </div>
+      </nav>
+
+      <!-- navigation around sections -->
+      <div class="filters">
+        <div class="chip active"><a>All</a></div>
+        <div class="chip"><a>Personal</a></div>
+        <div class="chip"><a>Work</a></div>
+        <div class="chip"><a>Ideas</a></div>
+        <div class="menuChip"><i class="fa-solid fa-grip"></i></div>
+      </div>
+
+      <section>
+        <div class="Notes">
+          <div class="cards">
+            <div class="top">
+              <span class="noteTitle">Welcome to notes app</span>
+              <span class="noteTime">9:00 AM</span>
+            </div>
+
+            <div class="noteContent">
+              <p>
+               This is your first note you can add, edit, delete and 
+               organize your notes at any time 
+              </p>
+            </div>
+            <div class="bottom">
+              <span></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="Notes">
+          <div class="cards">
+            <div class="top">
+              <span class="noteTitle">Project Ideas</span>
+              <span class="noteTime">Yesterday</span>
+            </div>
+
+            <div class="noteContent">
+              <ul>
+                <li>Build a portfolio website</li>
+                <li>Learn react</li>
+                <li>Create a mobile app</li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <span class="category" id="category1">work</span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+            </div>
+          </div>
+
+        </div>
+      
+                
+        <div class="Notes">
+          <div class="cards">
+            <div class="top">
+              <span class="noteTitle">Grocery list</span>
+              <span class="noteTime">May 10</span>
+            </div>
+
+            <div class="noteContent">
+              <ul>
+                <li>Milk</li>
+                <li>Bread</li>
+                <li>Eggs</li>
+                <li>Fruits</li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <span class="category" id="category2">personal</span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+            </div>
+          </div>
+          
+        </div>
+
+                     
+        <div class="Notes">
+          <div class="cards">
+            <div class="top">
+              <span class="noteTitle">Books to read</span>
+              <span class="noteTime">May 8</span>
+            </div>
+
+            <div class="noteContent">
+              <ul>
+                <li>Atomic habits</li>
+                <li>The subtle art of not giving a fuck</li>
+                <li>Deep work</li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <span class="category" id="category3">Ideas</span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+            </div>
+          </div>
+          
+        </div>
+
+                     
+        <div class="Notes">
+          <div class="cards">
+            <div class="top">
+              <span class="noteTitle">Workout plan</span>
+              <span class="noteTime">May 6</span>
+            </div>
+
+            <div class="noteContent">
+              <ul>
+                <li>Push-ups -3sets</li>
+                <li> Squats -3sets</li>
+                <li>Running -20 minutes</li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <span class="category" id="category2">personal</span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+     
+    </main>
+  </body>
+</html>

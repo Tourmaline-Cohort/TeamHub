@@ -1,0 +1,118 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.leftnav{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-left: 20px;
+}
+.leftnav h2{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 20px;
+}
+.searchbar{
+    padding-bottom: 20px;
+}
+.searchbar input{
+    font-family: calibri;
+    font-weight: bold;  
+    width: 345px;
+    height: 25px;
+    border-radius:15px;
+    padding: 6px;
+}
+.filters{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.chip{
+    font-family: calibri;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.chip.active{
+    background-color: #df8b0d;
+    color: white;
+}
+.menuChip{
+    font-size: 25px;
+    padding-top: 5px;
+    
+    cursor: pointer;
+}
+
+.cards{
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 14px 16px 14px 18px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+}
+.top{
+     display: flex;
+    justify-content: space-between;;
+    margin-bottom: 4px;
+    
+}
+.noteTitle{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 18px;
+}
+.noteTime{
+    font-family: calibri; 
+    font-weight: bold;
+    font-size: 15px;
+    color: #787878;
+}
+.noteContent{
+    font-family: calibri;
+    font-size: 15px;
+    color: #787878;
+    margin-bottom: 10px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star{
+    color: #df8b0d;
+}
+.category{
+    margin-left: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 12px;
+   
+    border-radius: 10px;
+    cursor: pointer;
+}
+#category1{
+     color: #7878c8;
+    background-color: #98baf6;
+    border: 2px solid #98baf6;
+}
+#category2{
+    color: #48833f;
+    background-color: #a3ddb6;
+    border: 2px solid #a3ddb6;
+}
+#category3{
+    color: #5a4071;
+    background-color: #ad85ba;
+    border: 2px solid #ad85ba;
+}
