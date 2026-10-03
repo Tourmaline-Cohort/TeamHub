@@ -3,57 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6e32d16a02.js" crossorigin="anonymous"></script>
   <title>Number Guessing Game | Home</title>
 
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🎯 Number Guessing Game</h1>
-  <p>Guess the secret number between 1 and 100</p>
+<main class="hero container">
 
-  <section class="section1">
-<div>
-  
-  <P><button>🏆Let's text your luck!</button></P>
-  <p class="p2">I have picked a number between <br>1 and 100</p>
-  
+    <div class="hero__content">
 
- <section class="section2">
-  <div>
-    <label for="enteryourguess">Enter your guess</label>
-    <div>
-    <input type="number" name="enteryourguess" id="enteryourguess" placeholder="Enter a number">
+      <div class="heading container">
+        <h1>🎯Number Guessing Game</h1>
+        <p>Guess the secret number between 1 and 100</p>
+      </div>
+
+      <div class="field__content containers">
+
+        <div class="field__btn container">
+          <a href="#"><i class="fa-solid fa-trophy" style="color: #3a9855;"></i>Let's test your luck!</a>
+        </div>
+        
+        <div class="field__text">
+          <p>I have picked a number between</p>
+          <p><span class="hero__span--first">1</span> and <span class="hero__span--second"> 100</span></p>
+        </div>
+        <form action="#">
+          <div class="field__card">
+            <p>Enter your guess</p>
+            <div class="field">
+              <div class="hash">#</div>
+              <input class="input-number" type="number" name="number" id="number" placeholder="Enter a number" required>
+            </div>
+            <button class="submit" type="submit">🎉 Check Guess</button>
+          </div>
+        </form>
+
+        <div class="hint__text">
+          <p><i class="fa-solid fa-lightbulb" style="color: #55596d;"></i> <span id="hint">Hint:</span> The number is between 1and 100</p>
+        </div>
+      </div>
+      
+      <div class="card__content containers">
+        <div class="card-one">
+          <p>🎯Attempts</p>
+          <p>0</p>
+          <p>Keep trying!</p>
+        </div>
+        <div class="card-two">
+          <p><i class="fa-solid fa-star" style="color: #c89125;"></i> Best Score</p>
+          <p>-</p>
+          <p>Play to set your best!</p>
+        </div>
+        <div class="card-three">
+          <p>📊 Range</p>
+          <p>1 - 100</p>
+          <p>Easy Mode</p>
+        </div>
+      </div>
+
+      <div class="game__history containers">
+        <div class="game__flex">
+          <i class="fa-solid fa-clock-rotate-left" style="color: #576171;"></i>
+          <h4>Game History</h4>
+        </div>
+
+        <hr>
+
+        <small>No guesses yet.Start the game!</small>
+      </div>
+
+      <div class="new__game containerss">
+        <div class="game__btn">
+          <i class="fa-solid fa-rotate-left" style="color: #1f63ef;"></i>
+          <a href="#">New Game</a>
+        </div>
+      </div>
     </div>
 
-    <div>
-      <button class="b2">🎉Check Guess</button>
-    </div>
-  </div>
-  </section>
-    <p>💡 Hints : The number between 1 and 100</p>
- </div>
-</section>
+</main>
 
-<div class="flex-container">
-  <section class="box1">
-    <p class="p3">🎯Attempt <br>0 <br>keep trying</p>
-  </section>
-
-  <section class="box2">
-     <p class="p4">⭐ Best Score<br>- <br>Play to set your score</p>
-  </section>
-
-  <section class="box3">
-     <p class="p5">Range <br>1 - 100 <br>Easy Mode</p>
-  </section>
-</div>
-<section class="section3">
-  <p class="p5">Game History</p> <hr>
-  <p>No guesses yet. Start the game!</p>
-</section>
-
- <div>
-  <p class="p6"><button>New game</button></p>
- </div>
 </body>
 </html>
