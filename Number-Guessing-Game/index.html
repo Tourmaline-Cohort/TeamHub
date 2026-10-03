@@ -3,57 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6e32d16a02.js" crossorigin="anonymous"></script>
   <title>Number Guessing Game | Home</title>
 
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-  <h1>🎯Number Guessing Game</h1>
-  <p>Guess the secret number between 1 and 100</p>
-</header>
+<main class="hero container">
 
-<main class="hero">
-  <section class="hero__container">
-    <div class="hero__container--luck">
-      <button class="hero__primary--button">🏆 Let's test your luck!</button>
-      <p>I have picked a number between</p>
-      <p><span class="hero__span--first">1</span> and <span class="hero__span--second"> 100</span></p>
-      <div class="hero__container--label">
-        <label for="number" class="label-text">Enter your guess</label>
-        <input type="number" name="number" id="number" placeholder="Enter a number" class="input__btn">
-        <button class="hero__secondary--button">🎉 Check Guess</button>
+    <div class="hero__content">
+
+      <div class="heading container">
+        <h1>🎯Number Guessing Game</h1>
+        <p>Guess the secret number between 1 and 100</p>
       </div>
-      <p class="hero__hint-text">💡 <span class="hero__hint">Hint:</span> The number is between 1 and 100</p>
+
+      <div class="field__content containers">
+
+        <div class="field__btn container">
+          <a href="#"><i class="fa-solid fa-trophy" style="color: #3a9855;"></i>Let's test your luck!</a>
+        </div>
+        
+        <div class="field__text">
+          <p>I have picked a number between</p>
+          <p><span class="hero__span--first">1</span> and <span class="hero__span--second"> 100</span></p>
+        </div>
+        <form action="#">
+          <div class="field__card">
+            <p>Enter your guess</p>
+            <div class="field">
+              <div class="hash">#</div>
+              <input class="input-number" type="number" name="number" id="number" placeholder="Enter a number" required>
+            </div>
+            <button class="submit" type="submit">🎉 Check Guess</button>
+          </div>
+        </form>
+
+        <div class="hint__text">
+          <p><i class="fa-solid fa-lightbulb" style="color: #55596d;"></i> <span id="hint">Hint:</span> The number is between 1and 100</p>
+        </div>
+      </div>
+      
+      <div class="card__content containers">
+        <div class="card-one">
+          <p>🎯Attempts</p>
+          <p>0</p>
+          <p>Keep trying!</p>
+        </div>
+        <div class="card-two">
+          <p><i class="fa-solid fa-star" style="color: #c89125;"></i> Best Score</p>
+          <p>-</p>
+          <p>Play to set your best!</p>
+        </div>
+        <div class="card-three">
+          <p>📊 Range</p>
+          <p>1 - 100</p>
+          <p>Easy Mode</p>
+        </div>
+      </div>
+
+      <div class="game__history containers">
+        <div class="game__flex">
+          <i class="fa-solid fa-clock-rotate-left" style="color: #576171;"></i>
+          <h4>Game History</h4>
+        </div>
+
+        <hr>
+
+        <small>No guesses yet.Start the game!</small>
+      </div>
+
+      <div class="new__game containerss">
+        <div class="game__btn">
+          <i class="fa-solid fa-rotate-left" style="color: #1f63ef;"></i>
+          <a href="#">New Game</a>
+        </div>
+      </div>
     </div>
 
-    <div class="hero__container--flex">
-      <div class="hero__container--attempts">
-        <p>🎯 Attempts</p>
-        <p class="hero__text1">0</p>
-        <p class="hero__Attempts-text">keep trying!</p>
-      </div>
-      <div class="hero__container--Bestscore">
-        <p>⭐ Best Score</p>
-        <p class="hero__text2">-</p>
-        <p class="hero__bestscore-text">Play to set your best</p>
-      </div>
-      <div class="hero__container--Range">
-        <p>📊 Range</p>
-        <p class="hero__text3">1 - 100</p>
-        <p class="hero__range-text">Easy Mode</p>
-      </div>
-    </div>
-
-    <div class="hero__game">
-      <h4 class="hero__game-text">🕤Game History</h4>
-      <hr>
-      <p class="hero__noguesses-text">No guesses yet.start the game!</p>
-    </div> 
-  </section>
 </main>
-<footer class="footer">
-  <button class="footer__btn">🔃 New Game</button>
-</footer>
+
 </body>
 </html>
